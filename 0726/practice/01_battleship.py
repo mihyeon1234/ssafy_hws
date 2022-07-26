@@ -8,7 +8,12 @@ print("================================")
 # 필요에 따라 추가적으로 함수를 만들어 자유롭게 활용할 수 있습니다.
 # 각자의 해역에 배를 위치시키는 함수
 def set_ship(index, sea):
-    pass
+    idx = int(input('배를 위치시킬 시작점을 고르세요. : '))
+    if idx >=1 and idx<=13:
+        (player_sea[idx] and player_sea[idx+1] and player_sea[idx+2])==1
+        print('*'*30)
+        print(f'플레이어의 해역 : {player_sea}')
+
 
 
 player_sea = [0] * 15  # 플레이어의 해역
